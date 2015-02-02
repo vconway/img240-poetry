@@ -1,0 +1,5 @@
+<h2>Poetry Assignment by Vance Conway</h2>
+<% @poems.each do |poem| %>
+
+<p>Poem: <%= link_to(poem.title, poem_path(poem)) %> by: <%= poem.author %> </p>
+<% end %>

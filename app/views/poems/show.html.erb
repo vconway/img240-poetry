@@ -1,0 +1,9 @@
+<h1><%=@poem.title %> </h1>
+<h4>By: <%= @poem.author %> </h4>
+
+<%= @poem.body %>
+
+<p>Source: <%=link_to(@poem.source)%></p>   <%# Link to Poem source %>
+
+<br/>
+<< <%= link_to "Click here to return to index", :back %>
