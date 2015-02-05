@@ -6,7 +6,7 @@ class CreatePoems < ActiveRecord::Migration
     t.string :author
     t.text :body
     t.string :source
-    t.boolean :published
+    t.boolean :published, default: false
     
       t.timestamps null: false
     end
